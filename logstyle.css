@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(./image/logpanel11.jpg);
+    background-size: cover;
+}
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid rgb(7, 204, 190);
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid rgb(7, 204, 190);
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 17px;
+    width: 80px;
+    float: left;
+    margin: 0 85px;
+}
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid rgb(7, 204, 190);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin: 12px 0;
+    outline: none;
+    font-size: 20px;
+    transition: all .8s;
+}
+.btn:hover{
+    background: rgb(255, 138, 0);
+    color: white;
+
+}

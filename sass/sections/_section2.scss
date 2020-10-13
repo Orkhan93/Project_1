@@ -1,0 +1,92 @@
+.container2{
+    @extend .container-full;
+    padding: $padding-2x*2.5 0px;
+    // background: lighten($color-gray, 20%);
+    background: $color-white;
+}
+.input-top-heading{
+    @include text-center;
+    font-family: $secondary-font;
+	margin: $medium*2.5 0px;
+}
+.input-top-heading{
+    h1{
+    color: $color-bg-head;
+	font-size: 1.5em;
+	margin-bottom: $margin-2x*2;
+    }
+}
+.input-top-heading{
+    p{
+    font-size: $medium;
+ 	color: $color-bg-head;
+    }
+}
+.input-wrapper{
+	border-radius: $medium*5;
+ 	background: #b4bcc4;
+}
+.inputs{
+    @extend .container-full;
+ 	margin: $margin-2x*2.5 auto;
+ 	padding: $padding-x;
+}
+.inputs{
+    select{
+    padding: $padding-2x $padding-2x*2;
+    border-radius: $medium;
+    border: $border-white;}
+    &:focus{
+        @include outline-0;
+    }
+}
+.inputs{
+    input{
+        margin: $margin-x;
+        padding: $padding-2x;
+        border-radius: $medium;
+        border: $border-white;
+    }
+}
+.inputs{
+    span{
+        @include outline-0;
+        padding: $padding-x;
+        border-radius: 50%;
+        background: $color-white;
+        font-size: $medium;
+        margin: $margin-2x $margin-x;
+        &:focus{
+            @include outline-0;
+        }
+    }
+}
+// input[type=search]{
+//     width: $medium*5;
+//     transition: all .35s ease-in-out;
+//     &:focus{
+//         @include outline-0;
+//         @include border-0;
+//         background: $color-l-blue;
+//  	    width: $medium*10;
+//     }
+// }
+input[type=submit]{
+    padding: 20px 50px;
+    @include transition;
+    &:hover{
+        background: $color-bg-button;
+        color: $color-white;
+        @include outline-0;
+        @include border-0;
+    }
+}
+input[type=text]{
+    &:focus{
+        @include border-0;
+        @include outline-0;
+        background-color: $color-l-blue;
+        color: $color-black;
+    }
+    
+}

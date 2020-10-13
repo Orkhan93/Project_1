@@ -1,0 +1,39 @@
+// Cursor
+@mixin cursor{
+    cursor: pointer;
+}
+// Text-decoration
+@mixin text-decor-none{
+    text-decoration: none;
+}
+// Image-value
+@mixin image-value{
+    width: 100%;
+    height: 100%;
+}
+// Margins
+@mixin mr-btm-50{
+    margin-bottom: 50px;
+}
+// Outline
+@mixin outline-0{
+    outline: none;
+}
+// Border
+@mixin border-0{
+    border: none;
+}
+// Text
+@mixin text-center{
+    text-align: center;
+}
+// Position
+@mixin relative {
+    position: relative;
+}
+@mixin absolute{
+    position: absolute;
+}
+@mixin transition{
+    transition: all .8s;
+}

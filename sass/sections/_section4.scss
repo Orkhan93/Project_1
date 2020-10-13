@@ -1,0 +1,197 @@
+.container_fluid{
+	background: $color-l-gray;
+	padding: $medium*2.5 0px;
+}
+.section4-item{
+    @extend .container-full;
+	border-radius: $medium*2.5;
+	box-sizing: border-box;
+	// width: 100%;
+}
+.section4-top-heading{
+    @include text-center;
+    @include mr-btm-50;
+    font-family: $first-font;
+	margin-top: $medium*2.5;
+}
+.section4-top-heading{
+    h1{
+        @include mr-btm-50;
+        font-size: 1.5em;
+	    color: $color-brown;
+    }
+}
+.section4-top-heading{
+    p{
+        @include mr-btm-50;
+        color: $color-gray;
+	    font-size: 1.5em;
+    }
+}
+.section4-wrapper{
+    @include mr-btm-50;
+}
+.section4-inside-heading{
+    @include text-center;
+	background: $color-white;
+	border-radius: $medium*2.5;
+	padding: 65px 0px;
+    transition: all 0.5s;
+    &:hover{
+        transform: scale(0.8);
+	    border-radius: $medium*5;
+    }
+}
+.section4-inside-heading{
+    p,h2{
+        font-size: 1.5em;
+        font-family: $first-font;
+	    margin-bottom: $medium;
+    }
+}
+.section4-inside-heading h2{
+	color: $color-brown;
+}
+.section4-inside-heading p{
+	color: $color-gray;
+}
+.section4-foto{
+    @include relative;
+	border-radius: $medium;
+	width: 100%;
+    transition: all 0.8s;
+    img{
+        @include image-value;
+        border-radius: $medium*2.5;
+    }
+}
+// OVERLAYS
+.overlay{
+    @include absolute;
+    @include image-value;
+	border-radius: $medium*2.5;
+	background: rgba(255,255,255,0);
+	top: 0px;
+	left: 0px;
+	transition: all 0.7s;
+}
+.section4-foto{
+    &:hover .overlay{
+        @include image-value;
+        @include cursor;
+        background: rgba(255,255,255,.5);
+    }
+} 
+.overlay-heading{
+    @include text-center;
+    font-family: $first-font;
+	font-size: 1.3em;
+	color: $color-black;
+	opacity: 0;
+}
+.section4-foto{
+    &:hover .overlay-heading{
+        opacity: 1;
+    }
+} 
+.overlay-photo{
+	border-radius: $small;
+	opacity: 0;
+	transition: all 0.7s 0.2s;
+}
+.section4-foto{
+    &:hover .overlay-photo{
+        opacity: 0.8;
+    }
+}
+.overlay2{
+    @include image-value;
+    @include absolute;
+	border-radius: $medium*2.5;
+	background: rgba(255,255,255,0);
+	top: 0px;
+	left: 0px;
+	transition: all 0.7s;
+}
+.section4-foto{
+    &:hover .overlay2{
+        @include cursor;
+        background: $color-gray;
+        opacity: .8;
+    }
+}
+.overlay2-heading{
+    @include text-center;
+    font-family: $first-font;
+	font-size: 1.3em;
+	color: $color-white;
+	opacity: 0;
+}
+.section4-foto{
+    &:hover .overlay2-heading{
+        @include absolute;
+        top: 5%;
+        opacity: 1;
+    }
+}
+.overlay-photo2{
+	border-radius: $small;
+	opacity: 0;
+	transition: all 0.7s 0.2s;
+}
+.section4-foto{
+    &:hover .overlay-photo2{
+        @include absolute;
+        width: 100%;
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.overlay3{
+    @include image-value;
+	background: $color-l-gray;
+	transition: all .8s .2;
+}
+.section4-foto{
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.section4-foto{
+    &:hover .overlay3{
+        @include absolute;
+        @include image-value;
+        width: 100%;
+        opacity: 0.6;
+    }
+}
+	
+
+	
+
+
+	
+
+
+	
+
+	
+
+
+	
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+	
+
+	

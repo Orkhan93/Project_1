@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width,inital-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>AptekApp |</title>
+  </head>
+  <body>
+<header>
+  <header id="top-header">
+    <div class="container">
+        <div class="row flex flex-between">
+        <div class="col-6">
+            <div class="container-full">
+                <div class="row flex flex-start">
+                    <div class="col-6">
+                       <div class="mail">
+                        <span><i class="far fa-envelope"></i> Dokta228@mail.ru </span>
+                       </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="phone">
+                            <span><i class="fas fa-phone"></i> +994(12) 375 88 09 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col-6 flex flex-end">
+       <div class="icons">
+        <span> <a href="https://facebook.com" title="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+        <span><a href="https://twitter.com" title="twitter" target="_blank"><i class="fab fa-twitter"></i></a></span>
+        <span> <a href="https://linkedin.com" title="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
+       </div>
+       </div>
+</header>
+      <div class="container">
+      <div class="flex flex-between align-center"  >
+          <div class="logo">
+            <img src="./image/logonew.jpg" alt="AptekApp" title="AptekApp" />
+          </div>
+          <navbar>
+            <ul class="menu flex flex-between">
+              <li><a href="index.html">Ana Səhifə</a></li>
+              <li><a href="about.html">Haqqımızda</a></li>
+              <li><a href="#section4">Apteklər</a></li>
+              <li><a href="#footer">Əlaqə</a></li>
+              <li><a href="services.html">Xidmətlər</a></li>
+            </ul>
+          </navbar>
+          <div class="navbar-buttons flex flex-between">
+            <button><a href="login.html">Login</a></button>
+          
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sign In
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="register_aptek.html">Aptek</a>
+              <a class="dropdown-item" href="register_user.html">User</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</header>
+
+
+<section id="section-1">
+  <div id="slider-container">
+    <div id="back">
+        <i class="fas fa-angle-left"></i>
+    </div>
+
+
+    <div id="slider">
+        
+        <div class="slide" style="background-image: url(./image/main-2.jpg);">
+            <div class="section1-items">
+              <h4>ÜSTÜNLÜKLƏR</h4><br>
+              <p>AptekApp istifadə edərək qazanacağınız</p>
+              <p>üstünlüklərə baxın!</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url(./image/mm11.jpg);">
+          <div class="section1-items">
+            <h4>Tibbi Kitabça</h4><br>
+            <p>İnteqrasya olunmuş şəxsi tibbi kitabça</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url(./image/item1.jpg);">
+          <div class="section1-items">
+            <h4>Həkim-Pasiyent-Aptek Sistemi</h4><br>
+            <p>Həkimlər, pasiyentlər və apteklər arasında sıx əlaqə</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url(./image/main-4.jpg);">
+          <div class="section1-items">
+                <h4>Dərman Axtarışı</h4><br>
+                <p>Çətin tapılan dərmanları</p>
+                <p>tez bir zamanda tapmağa kömək edir</p>
+          </div>
+        </div>
+    </div>
+    
+    <ol id='carouselIndicators' class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+  
+    <div id="next">
+        <i class="fas fa-angle-right"></i>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="circle-message" id="blur">
+  <a href="#" onclick="toggle()"><img id="circleFoto" src="./image/circle.png" alt=""></a>
+</div>
+<div id="popup">
+  <div class="popup-image">
+    <img src="./image/appp.png" alt="">
+  </div>
+  <h4>Resept göndər</h4>
+  <label for="">
+      <input type="file">
+      <textarea type="text" name="text" placeholder="Qeyd əlavə edin"></textarea><br>
+      <a href="#" onclick="toggle()">Göndər</a>
+    </label>
+</div>
+
+
+<!-- <section id="section1">
+      <div class="container">
+        <div class="flex align-center flex-around">
+          <div class="container-photo-wrapper">
+            <img src="../image/mainfoto2.png" alt="" />
+          </div>
+          <div class="container-photo2-wrapper">
+            <div class="container-photo2">
+              <img src="./image/appp.png" alt="" />
+            </div>
+            <br />
+            <div class="container-heading">
+              <h1>AptekApp</h1>
+              <br />
+              <h1>DƏRMANLARINIZI TAPMAĞA KÖMƏK EDİR</h1>
+              <br />
+            </div>
+            <div class="container-app-photos">
+              <a href="https://play.google.com" target="_blank"
+                ><img
+                  src="../image/googlePlay.png"
+                  alt="GooglePlay"
+                  title="Google Play"
+              /></a>
+              <a href="https://www.apple.com/ios/app-store/" target="_blank"
+                ><img src="../image/app.png" alt="AppStore" title="AppStore"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section> -->
+
+
+
+
+<section id="section2">
+      <div class="container2">
+        <div class="flex flex-column align-center">
+          <div class="input-top-heading">
+            <h1>HOW IT WORKS</h1>
+            <p>
+              Appropriately Strategize Performance Based Intellectual Capital
+              Before Premier Users
+            </p>
+          </div>
+
+          <div class="input-bar">
+            <div class="input-wrapper">
+              <div class="inputs flex justify-center">
+                <form action="">
+                  <label for="">
+                    <!-- <input type="text" placeholder="Keywords" />
+                    <input type="text" placeholder="Categories" /> -->
+                    <select name="city" id="city">
+                      <option value="Abşeron">Abşeron</option>
+                      <option value="Bakı">Bakı</option>
+                      <option value="Gəncə">Gəncə</option>
+                      <option value="Sumqayıt">Sumqayıt</option>
+                      <option value="Şirvan">Şirvan</option>
+                    </select>
+                    <select name="discrit" id="discrit">
+                      <option value="Xətai">Xətai</option>
+                      <option value="Nizami">Nizami</option>
+                      <option value="Nərimanov">Nərimanov</option>
+                      <option value="Səbayıl">Səbayıl</option>
+                      <option value="Sabunçu">Sabunçu</option>
+                    </select>
+                    <span><a href="https://www.google.com/maps/d/viewer?msa=0&ie=UTF8&t=m&ll=40.296286999999985%2C47.856445000000015&spn=4.18943%2C8.778076&z=7&source=embed&mid=1oKQpI0Mv6Y5MzkZD-GYiC4Tv0oA" target="_blank"><i class="far fa-compass"></i></a></span>
+                    <input type="submit"/>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+<!-- <section id="section3">
+	<div class="container3">
+		<div class="section3-heading flex flex-column justify-center">
+			<p>ÜSTÜNLÜKLƏR</p>
+			<h1>AptekApp istifadə edərək qazanacağınız üstünlüklərə baxın!</h1>
+		</div>
+		<div class="section3-row flex justify-center">
+			<div class="section3-items">
+				<h4>Dərman Axtarışı</h4>
+				<p>Çətin tapılan dərmanları tez bir zamanda tapmağa kömək edir.</p>
+			</div>
+			<div class="section3-items">
+				<h4>Tibbi Kitabça</h4>
+				<p>İnteqrasya olunmuş şəxsi tibbi kitabça.</p>
+			</div>
+			<div class="section3-items">
+				<h4>Həkim-Pasiyent-Aptek Sistemi</h4>
+				<p>Həkimlər, pasiyentlər və apteklər arasında sıx əlaqə.</p>
+			</div>
+		</div>
+	</div>
+</section> -->
+<!-- <section id="section4">
+   	<div class="container_fluid">
+		<div class="section4-top-heading">
+			<h1>READ AWESOME STORIES</h1>
+			<p>Appropriately Strategize Performance Based Intellectual Capital Before Premier Users</p>
+		</div>
+<div class="section4-wrapper flex flex-around">
+	<div class="col-4">
+		<div class="section4-item">
+			<div class="section4-foto">
+				<div class="overlay2">
+					<div class="overlay2-heading">
+						<p>Daxil etdiyiniz məlumatlar əsasında sistemlə inteqrasiya olunmuş tibbi kitabça təklif edirik.</p>
+					</div>
+					<div class="overlay-photo2 flex flex-end">
+						<img src="../image/arrow.png" alt="">
+					</div>
+				</div>
+				<img src="../image/capsul.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="col-8">
+		<div class="section4-item">
+			<div class="section4-inside-heading">
+				<p>June 29, 2016 by Mark Travor in Culture</p>
+				<h2>THE EXTREME CULTURE OF LONDON’S UNDERGROUND CLUB</h2>
+				<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+			</div>
+		</div>
+	</div>
+  </div>
+<div class="section4-wrapper flex flex-around">
+	<div class="col-7">
+		<div class="section4-item">
+			<div class="section4-inside-heading">
+				<p>June 29, 2016 by Mark Travor in Culture</p>
+				<h2>THE OBSERVER VIEW ON HOW TO VOTE IN THE EUROPEAN UNION REFERENDUM</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi quidem optio ea, a atque eligendi saepe ipsum ratione laboriosam!</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-5">
+		<div class="section4-item">
+			<div class="section4-foto">
+				<div class="overlay">
+					<div class="overlay-photo flex flex-end">
+						<img src="../image/mainfoto3.png" alt="">
+					</div>
+					<div class="overlay-heading">
+						<p>AptekApp vasitəsi ilə reseptlərinizi skan edib, ölkənin apteklərinə eyni vaxtda göndərə bilərsiniz.</p>
+					</div>
+				</div>
+				<img src="../image/item1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+  </div>
+<div class="section4-wrapper flex flex-around">
+  <div class="col-4">
+    <div class="section4-item">
+      <div class="section4-foto">
+        <div class="overlay3"></div>
+        <img src="../image/aptek1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="section4-item">
+      <div class="section4-foto">
+        <div class="overlay3"></div>
+         <img src="../image/aptek2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="section4-item">
+      <div class="section4-foto">
+        <div class="overlay3"></div>
+        <img src="../image/aptek3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+ </section> -->
+ 
+ 
+
+
+ 
+ <footer id="footer">
+		<div class="bottom_main flex flex-around">
+			<div class="footer-explanation">
+				<h2>Contact Us</h2><br>
+				<p class="footer-1p">Baku , Azerbaijan</p>
+				<p class="footer-1p">Nizami r, Naxçıvanski 2566/67</p>
+				<p class="footer-1p">+994(12) 375 88 09</p>
+				<p class="footer-1p">Dokta228@mail.ru</p>
+			</div>
+			<div class="footer-explanation">
+				<h2>Quick Links</h2><br>
+				<p><a href="#" class="footer-menu">Home</a></p>
+				<p><a href="about.html" class="footer-menu">How it works</a></p>
+				<p><a href="#" class="footer-menu">Search</a></p>
+				<p><a href="#" class="footer-menu">Contact</a></p>
+			</div>
+			<div class="footer-explanation">
+				<h2>Social Bar</h2><br>
+				<div class="footer-social-media">
+					<ul class="flex flex-between">
+						<li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a></li>
+						<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+						<li><a href="https://youtube.com" target="_blank"><i class="fab fa-youtube" title="Youtube"></i></a></li>
+						<li><a href="https://google.com" target="_blank"><i class="fab fa-google" title="Google"></i></a></li>
+						<li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook" title="Facebook"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-explanation">
+				<h2>Send Offers</h2><br>
+				<form action="mail.ru">
+					<label for="email">
+					<input type="email" id="email" name="email" placeholder="Enter Gmail" required>
+					<input type="submit">
+				</label>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="footer-copyright flex flex-between">
+			<h2>Copyright &copy;2020 All right reserved | Designed By Orkhan</h2>
+			<div class="footer-copyright-icons">
+				<a href="https://paypal.com" title="Paypal"
+				target="_blank"><img src="../image/1.png" alt=""></a>
+				<a href="https://mastercard.az" title="Mastercard"
+				target="_blank"><img src="../image/2.png" alt=""></a>
+				<a href="https://visa.com" title="Visa" target="_blank"><img src="../image/4.png" alt=""></a>
+				<a href="https://westernunion.com" title="WesternUnion" target="_blank"><img src="../image/3.png" alt=""></a>
+				<a href="https://discover.com" title="Discover" target="_blank"><img src="../image/5.png" alt=""></a>
+			</div>
+		</div>
+  </footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+    }
+</script>
+
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

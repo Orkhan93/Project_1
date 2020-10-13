@@ -1,0 +1,59 @@
+#section3{
+    @extend .container-full;
+	background: $color-white;
+ 	padding: $padding-2x*2.5 0px;
+     .container3{
+         @extend .container;
+        border-radius: $medium;
+    }
+    .section3-heading{
+        font-family: $first-font;
+        padding-top: $padding-2x*2.5;
+    }
+    .section3-heading{
+        p{
+            @include mr-btm-50;
+            @include text-center;
+            color: $color-black;
+            font-size: $medium;
+        }
+    }
+    .section3-heading{
+        h1{
+        @include text-center;
+        @include mr-btm-50;
+        font-size: 1.5em;
+        color: $color-gray;
+        }
+        h4{
+            font-size: $medium;
+        }
+    }
+    .section3-row{
+        font-family: $first-font;
+        &:hover .section3-items{
+            filter:blur(3px);
+            opacity: .5;
+            transform: scale(.98);
+            box-shadow:none;
+            &:hover{
+                transform:scale(1);
+                filter:blur(0px);
+                opacity: 1;
+                box-shadow: $small $medium $medium*2 $color-gray;
+            }
+        }
+    }
+    .section3-items{
+        width: 32%;
+        border-radius: $small;
+        box-sizing: border-box;
+        padding: $padding-x+5;
+        font-size: $medium+4;
+        color: $color-gray;
+        transition: all .5s;
+        p{
+            font-size: 18px;
+        }
+    }
+}

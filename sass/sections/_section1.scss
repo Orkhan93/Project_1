@@ -1,0 +1,93 @@
+// #section1{
+//     margin: 50px auto;
+//     .container-photo-wrapper{
+//         width: 260px;
+//         height: 560px;
+//    }
+//    .container-photo-wrapper{
+//        img{
+//            @include image-value;
+//        }
+//     }
+//     .container-photo2{
+//         opacity: .8;
+//     }
+//     .container-heading{
+//         font-family: $first-font;
+//         font-size: 2em;
+//         color: $color-white;
+//     }
+//     .container-app-photos{
+//         a{
+//             &:focus{
+//                 @include outline-0;
+//             }
+//         }
+//     }
+// }
+
+#section-1{
+    width: 100%;
+    background: $color-white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $first-font;
+    #slider-container{
+        width: 1200px;
+        height: 450px;
+        margin: $small;
+        @include border-0;
+        @include relative;
+        overflow: hidden;
+        box-shadow: 10px 0px 10px 8px $color-l-gray;
+        opacity: .7;
+        #back, #next{
+            width: $large;
+            height: $large;
+            background-color: $color-white;
+            color: $color-black;
+            border-radius: 100%;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include cursor;
+            @include absolute;
+            z-index: 2;
+            top: calc(50% - 15px);
+        }
+        #back{
+            left: 15px;
+        }
+        #next{
+            right: 15px;
+        }
+        #slider{
+            width: fit-content;
+            height: 450px;
+            display: flex;
+            @include relative;
+            left: 0;
+            transition: .5s all ease;
+        }
+        .slide{
+            width: 1200px;
+            height: 450px;
+            background-size: cover;
+            background-position: center center;
+            // background-attachment: fixed;
+            display: flex;
+            padding: 50px 0px 0px 50px;
+            justify-content: flex-start;
+            font-size: 25px;
+            color: $color-bg-head;
+            opacity: 1;
+            
+            
+        }
+    }
+    
+}
+

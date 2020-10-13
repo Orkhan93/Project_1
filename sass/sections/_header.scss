@@ -1,0 +1,150 @@
+header{
+    @extend .container-full;
+    background: $color-bg-head;
+    padding: $medium 0;
+    opacity: .7;
+    .logo{
+        width: $medium*5;
+        height: $medium*5;
+        margin-top: $small;
+        border-radius: $medium*5;
+        overflow: hidden;
+        img{
+            @include image-value;
+        }
+    }
+    .menu{
+        li{
+            padding: $padding-x;
+	        margin: auto $small/2;
+	        color: $color-black;
+	        font-size: 14px;
+	        border-radius: $small;
+            transition: all .8s;
+            &:hover{
+                @include cursor;
+                background: $color-white;
+	            color: $color-black;
+	            transform: scale(1.1);
+	            border-radius: $large*3;
+            }
+        }
+    }
+    .menu{
+        li{
+            a{
+                @include text-decor-none;
+                font-family: $secondary-font;
+                &:hover{
+                    background: $color-white;
+	                color: $color-bg-button;
+                }
+            }
+        }
+    }
+}
+    .icons{
+        span{
+            a{
+                font-size: $medium+5;
+	            margin: 0 $small/2;
+ 	            color: $color-black;
+                transition: all .5s;
+                &:hover{
+                    @include cursor;
+ 	                color: $color-white;
+ 	                opacity: 0.8;
+                }
+                &:focus{
+                    @include outline-0;
+                }
+            }
+        }
+    }
+    .navbar-buttons{
+        button{
+            padding: $small/2 $medium;
+            background: $color-bg-button;
+            border-radius: $small/2;
+            margin: 0 $small/2;
+            @include border-0;
+            @include transition;
+            &:hover{
+                color: $color-black;
+                background: $color-white;
+            }
+            a{
+                @include text-decor-none;
+                color: $color-white;
+                &:hover{
+                    color: $color-black;
+                }
+            }
+        }
+        .dropdown{
+            a{
+                @include transition;
+                font-size: 20px;
+                &:hover{
+                    color: $color-white;
+                    background: $color-gray;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+#top-header{
+    padding: $small;
+    border-bottom: $small/10 solid $color-gray;
+}
+
+#top-header{
+    .mail, .phone{
+        span{
+            color: $color-white;
+            @include transition;
+            &:hover{
+                @include cursor;
+                color: $color-black;
+            }
+        }
+        span{
+            i{
+                margin-right:$small;
+                &:hover{
+                    color: $color-black;
+                }
+            }
+        }
+    }
+    .icons{
+        span{
+            i{
+                color: $color-white;
+                margin-right: $medium;
+                &:hover{
+                    @include cursor;
+                } 
+            }
+        }
+    }
+    .icons{
+        span{
+            a{
+                font-size: $small+3;
+                i{
+                    color: $color-white;
+                    @include transition;
+                    &:hover{
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
